@@ -15,5 +15,21 @@ class MenuActivity : AppCompatActivity() {
             val lanzar = Intent (this, ConfiguracionNotificacionesActivity::class.java)
             startActivity(lanzar)
         }
+        val boton2=findViewById<Button>(R.id.menu_desplegable)
+        boton2.setOnClickListener {
+            val lanzar = Intent (this, MenuDesplegableActivity::class.java)
+            startActivity(lanzar)
+        }
+        val boton3=findViewById<Button>(R.id.historialclinico)
+        boton3.setOnClickListener {
+            val lanzar = Intent (this, HistorialClinicoActivity::class.java)
+            startActivity(lanzar)
+        }
+        val boton4=findViewById<Button>(R.id.bitacoraglucosa)
+        boton4.setOnClickListener {
+            val lanzar = Intent (this, BitacoraGlucosaActivity::class.java)
+            startActivity(lanzar)
+        }
+
     }
 }
